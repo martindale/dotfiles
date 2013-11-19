@@ -12,3 +12,5 @@
   interactive = auto
   ui = true
   pager = true
+[alias]
+  wat = log --graph --oneline
