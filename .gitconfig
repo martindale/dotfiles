@@ -13,4 +13,6 @@
   ui = true
   pager = true
 [alias]
-  wat = log --graph --oneline
+  wat = log --graph --decorate --oneline --all
+  lol = log --graph --pretty=format:'%C(yellow)%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cblue(%cr)%Creset' --abbrev-commit --date=relative
+  lola = log --graph --pretty=format:'%C(yellow)%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cblue(%cr)%Creset' --abbrev-commit --date=relative --all
