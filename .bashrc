@@ -56,6 +56,13 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# Load in the git branch prompt script.
+source ~/.git-prompt.sh
+# requires bash-prompt.sh
+PS1="\[\033[36m\][\[\033[m\]\[\033[34m\]\u@\h\[\033[m\] \[\033[32m\]\W\[\033[m\]\[\033[36m\]]\[\033[m\]\e[0;31m\$(__git_ps1)\e[0m $ "
+
+
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
