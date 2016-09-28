@@ -112,4 +112,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export LANG=en_US.UTF-8
-
+export TREZOR_GPG_USER_ID="Eric Martindale <eric@ericmartindale.com>"
