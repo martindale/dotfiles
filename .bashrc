@@ -57,11 +57,10 @@ fi
 unset color_prompt force_color_prompt
 
 # Load in the git branch prompt script.
-source ~/.git-prompt.sh
+# source ~/.git-prompt.sh
+
 # requires bash-prompt.sh
-PS1="\[\033[36m\][\[\033[m\]\[\033[34m\]\u@\h\[\033[m\] \[\033[32m\]\W\[\033[m\]\[\033[36m\]]\[\033[m\]\e[0;31m\$(__git_ps1)\e[0m $ "
-
-
+PS1="\[\033[36m\][\[\033[m\]\[\033[34m\]\u@\h\[\033[m\] \[\033[32m\]\W\[\033[m\]\[\033[36m\]]\[\033[m\]\e[0;31m\$(__git_ps1)\e[0m ⚡ "
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -90,6 +89,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias cp='rsync -aP'
+alias migrate='/home/eric/sync/tools/migrate.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -113,3 +113,6 @@ fi
 
 export LANG=en_US.UTF-8
 export TREZOR_GPG_USER_ID="Eric Martindale <eric@ericmartindale.com>"
+
+export NVM_DIR="/home/eric/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
