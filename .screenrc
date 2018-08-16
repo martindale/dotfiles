@@ -1,0 +1,8 @@
+shell bash # default shell
+
+screen -t 'pm2' # https://gist.github.com/martindale/535e99ff53cb1b6e6f465291e222b9a8
+screen -t 'irc' # irssi
+screen -t 'gitea' # gitea
+screen -t 'slackin' # TODO: replace with /invitations as a Slack app
+screen -t 'lightning' # bring Lighting online
+screen -t 'handshake' # require a handshake
